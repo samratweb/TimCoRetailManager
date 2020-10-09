@@ -34,7 +34,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.lblMessage = new System.Windows.Forms.Label();
+            this.RboxMessage = new System.Windows.Forms.RichTextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,14 +42,14 @@
             // 
             this.txtUsername.Location = new System.Drawing.Point(144, 32);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(134, 22);
+            this.txtUsername.Size = new System.Drawing.Size(204, 22);
             this.txtUsername.TabIndex = 0;
             // 
             // txtPassword
             // 
             this.txtPassword.Location = new System.Drawing.Point(144, 76);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(134, 22);
+            this.txtPassword.Size = new System.Drawing.Size(204, 22);
             this.txtPassword.TabIndex = 1;
             // 
             // label1
@@ -71,16 +71,16 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(404, 190);
+            this.groupBox1.Size = new System.Drawing.Size(542, 190);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Enter username Password";
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(134, 132);
+            this.btnLogin.Location = new System.Drawing.Point(183, 126);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(110, 42);
+            this.btnLogin.Size = new System.Drawing.Size(86, 32);
             this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -95,21 +95,22 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Password";
             // 
-            // lblMessage
+            // RboxMessage
             // 
-            this.lblMessage.AutoSize = true;
-            this.lblMessage.Location = new System.Drawing.Point(12, 203);
-            this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(65, 17);
-            this.lblMessage.TabIndex = 4;
-            this.lblMessage.Text = "Message";
+            this.RboxMessage.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.RboxMessage.ForeColor = System.Drawing.Color.Red;
+            this.RboxMessage.Location = new System.Drawing.Point(0, 190);
+            this.RboxMessage.Name = "RboxMessage";
+            this.RboxMessage.Size = new System.Drawing.Size(542, 212);
+            this.RboxMessage.TabIndex = 4;
+            this.RboxMessage.Text = "";
             // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(404, 255);
-            this.Controls.Add(this.lblMessage);
+            this.ClientSize = new System.Drawing.Size(542, 402);
+            this.Controls.Add(this.RboxMessage);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmLogin";
             this.Text = "Login";
@@ -118,7 +119,6 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -130,6 +130,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.Label lblMessage;
+        private System.Windows.Forms.RichTextBox RboxMessage;
     }
 }
