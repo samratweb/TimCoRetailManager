@@ -68,6 +68,8 @@
     <Compile Include="Helper\APIHelper.cs" />
     <Compile Include="Helper\AuthenticatedUser.cs" />
     <Compile Include="Helper\IAPIHelper.cs" />
+    <Compile Include="Helper\ILoggedInUser.cs" />
+    <Compile Include="Helper\LoggedInUser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmMain.resx">

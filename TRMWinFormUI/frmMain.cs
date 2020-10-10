@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using TRMWinFormUI.Helper;
 
 namespace TRMWinFormUI
 {
@@ -8,8 +9,10 @@ namespace TRMWinFormUI
         public frmMain()
         {
             InitializeComponent();
+           // _loggedInUser = new LoggedInUser();
         }
         public static bool IsShowLogin;
+        public static ILoggedInUser _loggedInUser;
 
         private void btnViewLogin_Click(object sender, EventArgs e)
         {
